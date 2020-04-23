@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "InformaProNormal";
+  src: url("../fonts/InformaPro-Normal.woff") format("woff"),
+    url("../fonts/InformaPro-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "InformaProNormal", sans-serif;
+}
+.wrapper {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+.sidebar {
+  width: 27%;
+  padding: 25px 0 0 60px;
+}
+.logo img {
+  width: 165px;
+  height: 26px;
+  object-fit: contain;
+  outline: none;
+}
+.navigation_tittle {
+  margin-top: 25%;
+  margin-bottom: 44px;
+  color: #292929;
+  font-weight: 700;
+  font-size: 30px;
+}
+.navigation > ul {
+  padding-left: 0;
+}
+.navigation > ul > li {
+  list-style: none;
+  margin-bottom: 44px;
+}
+.navigation > ul > li > a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 24px;
+  border: 1px solid #e8e8e8;
+  padding: 15px 30px 19px 30px;
+  transition: box-shadow 1.2s ease, color 1.2s ease;
+}
+.navigation > ul > li > a:hover {
+  transition: box-shadow 1s ease, color 1s ease;
+  box-shadow: inset 0 5em #00953b;
+  color: whitesmoke;
+}
+.burger_navigation {
+  width: 7%;
+}
+.vertical-slider {
+  width: 66%;
+}
+.number1 {
+  background: url(../images/slider__item1.png);
+}
+.number2 {
+  background: url(../images/slider__item2.png);
+}
+.number3 {
+  background: url(../images/slider__item3.png);
+}
+.number4 {
+  background: url(../images/slider__item4.png);
+}
+.number5 {
+  background: url(../images/slider__item5.png);
+}
+.number6 {
+  background: url(../images/slider__item3.png);
+}
+.number {
+  color: #ffffff;
+  font-size: 120px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 38px;
+  padding-top: 30px;
+}
+.slider__item__container {
+  width: 50%;
+  margin-left: 34px;
+}
+.slider__item__container-tittle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.slider__item__container-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.slider .slick-dots button {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 14px 100px 14px 25px;
+  transition: all 1.6s linear;
+}
+.slider .slick-active button {
+  color: #00953b;
+  font-weight: 700;
+  border-radius: 20px 0 0 20px;
+  background-color: #f5f5f5;
+  transition: all 1.6s linear;
+}
+.slider .slick-dots {
+  width: 130px;
+}
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 7%;
+}
+.slick-list {
+  overflow: hidden;
+  height: 100% !important;
+  width: 100%;
+  padding: 0 !important;
+}
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: auto;
+  height: 340px;
+  margin-top: 17%;
+}
+.slick-dots li {
+  list-style: none;
+}
+.slick-slide[aria-hidden="true"] {
+  opacity: 0.5;
+  max-width: 90%;
+  width: 100% !important;
+  cursor: pointer;
+  transition: 1.5s;
+}
+.slick-slide[aria-hidden="true"]:hover {
+  opacity: 1;
+  transition: 1.5s;
+}
+.slick-slide[aria-hidden="true"] {
+  transition: all 1.5s linear;
+}
+.slick-slide {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.slick-center {
+  max-width: 100% !important;
+  width: 100% !important;
+  transition: all 1.5s linear;
+}
+.slider {
+  height: 800px;
+}
+.slider__item {
+  display: flex !important;
+  flex-direction: column;
+  height: 609px;
+  outline: none;
+  padding: 8px 0;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin: 8px auto;
+}
+.nav-menu {
+  margin-top: 5px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  right: 5%;
+}
+.menu li {
+  list-style: none;
+  margin-bottom: 44px;
+}
+.menu > li > a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 24px;
+  border: 1px solid #e8e8e8;
+  padding: 15px 30px 19px 30px;
+  color: #282828;
+  background-color: #f5f5f5;
+}
+.trigger {
+  display: inline-block;
+  margin: 3px;
+  cursor: pointer;
+}
+.trigger i {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background: #3a3a3a;
+  border-radius: 2px;
+}
+.show {
+  display: block;
+}
+.btn {
+  background: url(../images/Flag_of_Ukraine.png);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  border: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  outline: none;
+}
+.burger_navigation {
+  display: flex;
+}
+@media (min-height: 800px) {
+  .slider {
+    height: 800px;
+    overflow: hidden;
+  }
+  .slider__item {
+    height: auto;
+  }
+  .slick-slide img {
+    max-width: 100%;
+  }
+  .slick-dots {
+    margin-top: 10%;
+    height: 300px;
+  }
+  .slick-track {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .slider__item__container {
+    width: auto;
+  }
+  .navigation > ul > li > a {
+    font-size: 13px;
+  }
+  .burger_navigation {
+    flex-direction: column;
+  }
+  .btn {
+    margin-left: 3px;
+  }
+  .slider .slick-dots {
+    width: 50px;
+  }
+  .slick-track {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 1px;
+  }
+  .vertical-slider {
+    width: 80%;
+    margin-top: 70px;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo {
+    display: block;
+    position: absolute;
+    left: 10px !important;
+  }
+  .slick-dots {
+    padding-left: 0;
+    margin-top: 15%;
+    height: 300px;
+  }
+  .menu {
+    right: 20%;
+  }
+  .number {
+    font-size: 30px;
+  }
+  .slider__item__container-tittle {
+    font-size: 16px;
+  }
+  .slider__item__container-text {
+    font-size: 10px;
+  }
+  .slick-track {
+    padding-top: 0;
+  }
+  .slick-list {
+    height: 95vh !important;
+  }
+  .slider__item {
+    justify-content: flex-start;
+  }
+  .menu > li > a {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .menu > li {
+    margin-bottom: 20px;
+  }
+  .logo img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 568px) {
+  .slider .slick-dots button {
+    padding-right: 30px;
+  }
+  .slick-list {
+    height: 95vh !important;
+  }
+  .logo img {
+    max-width: 75%;
+  }
+}
