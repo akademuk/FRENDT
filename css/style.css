@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "InformaProNormal";
+  src: url("../fonts/InformaPro-Normal.woff") format("woff"),
+    url("../fonts/InformaPro-Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "InformaProBold";
+  src: url("../fonts/InformaPro-Bold.woff") format("woff"),
+    url("../fonts/InformaPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "InformaProMedium";
+  src: url("../fonts/InformaPro-Medium.woff") format("woff"),
+    url("../fonts/InformaPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/*Стили для демонстрации*/
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  font-family: "InformaProNormal", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 25px;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.burger_navigation {
+  width: 15%;
+  height: 100%;
+  padding-top: 33px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: inherit;
+  width: 25%;
+  padding-left: 60px;
+  padding-top: 31px;
+}
+.slider {
+  width: 60%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.slick-track {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.slider__item {
+  height: 520px;
+  margin-top: 10px;
+  width: 90% !important;
+  outline: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 1s ease-in-out;
+  transition: all 0.5s ease-out 0.5s;
+}
+.slider__item:hover {
+  background: transparent;
+  transition: background 1s ease-in-out;
+}
+.slick-slide {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  position: relative;
+}
+.slick-slide:before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: inherit;
+  object-fit: fill;
+}
+.container_video {
+  text-align: left;
+  padding: 30px 0 50px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+.number {
+  color: #ffffff;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 109px;
+}
+.slider__item__container-tittle {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "InformaProBold";
+  font-size: 24px;
+  font-weight: 700;
+  outline: none;
+  margin-bottom: 15px;
+}
+.slider__item__container-text {
+  color: #ffffff;
+  width: 70%;
+  font-size: 16px;
+  font-weight: 400;
+}
+.slick-dots {
+  width: 100px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.slick-dots li button {
+  color: #282828;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 0;
+  cursor: pointer;
+  height: 39px;
+}
+.slick-dots .slick-active {
+  border-radius: 20px 0 0 20px;
+  background-color: #f5f5f5;
+  color: #00953b;
+  font-weight: 700;
+  width: 80px;
+  font-family: "InformaProBold";
+}
+.slick-dots .slick-active button {
+  color: #00953b;
+  font-weight: 700;
+  font-family: "InformaProBold";
+}
+.slick-center {
+  width: 100% !important;
+  background: transparent;
+  transition: all 0.5s ease-out 0.5s;
+}
+.logo a svg {
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.svg-mouse {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: absolute;
+  top: 80%;
+  left: 26.8%;
+  bottom: 0;
+  right: 0;
+}
+.navigation > ul > li > a {
+  transition: box-shadow 1.2s ease, color 1.2s ease;
+}
+.navigation > ul > li > a:hover {
+  transition: box-shadow 1s ease, color 1s ease;
+  box-shadow: inset 0 5em #00953b;
+  color: whitesmoke;
+}
+.trigger i {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 4px auto;
+  background: #3a3a3a;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn {
+  background: url(../img/Flag_of_Ukraine.png);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  outline: none;
+}
+.burger_navigation {
+  display: flex;
+  justify-content: center;
+}
+.mouse {
+  margin-bottom: 10px;
+}
+/*Navigation*/
+.navigation_tittle {
+  color: #292929;
+  font-family: "InformaProBold";
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 23px;
+}
+.navigation ul li a {
+  color: #282828;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 16px 30px 19px 30px;
+  border-radius: 24px;
+  border: 1px solid #e8e8e8;
+}
+.navigation ul li {
+  margin-bottom: 35px;
+}
+.link-arrow {
+  width: 47px;
+  height: 47px;
+  border: 2px solid #ffffff;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+}
+.link-arrow svg {
+  cursor: pointer;
+}
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: block;
+  align-items: flex-start;
+}
